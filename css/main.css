@@ -12,27 +12,27 @@ header {
   background-size: cover; }
 
 a.navbar-brand {
-  color: rgba(255, 255, 255, 0.85) !important;
-  font-weight: 500; }
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 600; }
   a.navbar-brand:hover, a.navbar-brand:active {
     color: #fff !important; }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(0, 0, 0, 0.8);
   letter-spacing: 1.5px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 3;
-  font-weight: 500; }
+  font-weight: 600; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
     color: #fff; }
 
 .da-home-page-text {
-  color: #fff;
-  -webkit-text-fill-color: rgba(227, 227, 227,1);
-  -webkit-text-stroke: 3px white;
-  -webkit-text-stroke-color: rgba(0, 0, 0, 0.8);}
+  -webkit-text-fill-color: rgba(227, 227, 227,0.5);
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 1);
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.9);
+}
   .da-home-page-text h2 {
-    font-weight: 500; }
+    font-weight: 700; }
   .da-home-page-text h3 {
     line-height: 1.5;
    
@@ -146,9 +146,12 @@ a.credit {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px; }
+  right: 20px;
+   }
   #scrolltop .btn {
-    border-radius: 50%; }
+    border-radius: 50%;
+    box-shadow: rgb(0,0,0) 0px 3px 16px 0px;
+  }
 
 .icon {
   display: inline-flex;
@@ -158,10 +161,6 @@ a.credit {
 /*Common Style*/
 .da-section {
   padding: 100px 0; }
-
-
-
-
 
 
   #portfolio .portfolio-item {
@@ -247,4 +246,19 @@ a.credit {
   .portfolio-modal .close-modal:hover {
     opacity: 0.3;
   }
-  
+  @media (max-width: 991px){
+    #da-navbarNav ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: rgb(52,102,143);
+    }
+    #da-navbarNav ul .nav-item {
+      margin: 0;
+      padding: 0px;
+    }
+    #da-navbarNav ul .nav-item a{
+      padding: 0;
+    }
+  }

@@ -111,10 +111,12 @@ a.navbar-brand {
 
 /*Contact Style*/
 .da-contact {
-  background: url("../images/staticmap.png") no-repeat center center;
   position: relative;
   min-height: 700px;
-  background-size: cover; }
+ }
+ .da-contact-detail .container .card{
+  box-shadow: rgb(0,0,0) 0px 3px 16px 0px;
+ }
   .da-contact .da-contact-detail {
     padding: 8% 0 8% 1%; }
     @media (max-width: 992px) {

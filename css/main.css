@@ -164,7 +164,7 @@ a.credit {
 .da-section {
   padding: 100px 0; }
 
-
+/*porfolio*/
   #portfolio .portfolio-item {
     max-width: 26rem;
     margin-left: auto;
@@ -264,3 +264,24 @@ a.credit {
       padding: 0;
     }
   }
+
+  /*Service*/
+
+  .da-services .container{
+    min-width: 90%;
+  }
+  .da-services .container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+  @media (min-width:768px) {
+    .da-services .container .row .col-lg-2{
+      margin: 10px 0px;
+    }
+    .da-services .container .row .col-lg-2 .card, #learn .container .row .col-md-4 .card{
+      min-height: 100%;
+     }
+  }
+  

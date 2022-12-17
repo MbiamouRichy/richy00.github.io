@@ -3,19 +3,17 @@ body {
 
 /*Header Style*/
 header {
-  background: url("../images/da-img-1.jpg") no-repeat ;
-  background-attachment: fixed;
   position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 1080px;
-  background-size: cover; }
+ }
 
 a.navbar-brand {
   color: rgba(0, 0, 0, 0.8) !important;
   font-weight: 600; }
   a.navbar-brand:hover, a.navbar-brand:active {
-    color: #fff !important; }
+    color: rgb(52,102,143) !important; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.8);
@@ -24,25 +22,19 @@ a.navbar-brand {
   line-height: 3;
   font-weight: 600; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
-    color: #fff; }
-
-.da-home-page-text {
-  -webkit-text-fill-color: rgba(227, 227, 227,0.5);
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 1);
-  -webkit-text-stroke-color: rgba(0, 0, 0, 0.9);
-}
-  .da-home-page-text h2 {
-    font-weight: 700; }
+    color: rgb(52,102,143); }
   .da-home-page-text h3 {
+    font-size: 20px;
+    font-weight: 600;
     line-height: 1.5;
-   
  }
 
 @media (max-width: 575.98px) {
   .da-home-page-text .display-3 {
     font-size: 2.5rem; }
   .da-home-page-text h3 {
-    font-size: 1rem; } }
+    font-size: 1rem;
+   } }
 
 /*Projects Style*/
 .da-projects .da-project-1 {

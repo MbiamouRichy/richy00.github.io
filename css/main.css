@@ -2,13 +2,9 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 /*Header Style*/
-header {
-  position: relative;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 1080px;
- }
-
+header{
+  padding-bottom: 15px;
+}
 a.navbar-brand {
   color: rgba(0, 0, 0, 0.8) !important;
   font-weight: 600; }
@@ -35,6 +31,8 @@ a.navbar-brand {
   .da-home-page-text h3 {
     font-size: 1rem;
    } }
+
+
 
 /*Projects Style*/
 .da-projects .da-project-1 {
@@ -276,4 +274,52 @@ a.credit {
       min-height: 100%;
      }
   }
+
+  .carousel-item .card{
+    width: 100%;
+    height: 100%;
+  }
+
+/*================================================
+             effet swiper sur les images
+ ================================================*/
+
+ .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 200px!important;
+  background-position: center;
+  background-attachment: fixed;
+  margin-right: 30px;
+}
+.swiper-slide img {
+  width: 261px !important;
+  height: 81px !important;
+}
+.swiper .swiper-slide:hover{
+  transform: scale(1.1, 1.1) !important;
+  transition: all 0.8s ease 0s!important;
+}
+.swiper-slide .swiper-slide-shadow-left,
+.swiper-slide .swiper-slide-shadow-right{
+  background-image: none;
+}
   
+@media (min-width: 0px) and (max-width: 407px) {
+  #logo-text{
+    font-size: 0.8rem;
+  }
+  #portfolio .container .text-center h2{
+    font-size: 1.5rem;
+  }
+  .swiper-slide img {
+    width: 159px !important;
+    height: 58px !important;
+  }
+  .swiper-slide{
+    margin-right: -1px;
+  }
+}

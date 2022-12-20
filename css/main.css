@@ -221,36 +221,80 @@ body {
 /*Header Style*/
 
 header{
-  padding-bottom: 15px;
+  position: relative;
+  background: #fff url(../images/hr-bar.jpg) repeat-x;
+  padding: 25px 0;
 }
+header .logo-div{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo-text, header .logo{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.head-info {
+  float: right;
+}
+.head-info li {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 35px;
+}
+.head-info li i {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  display: table-cell;
+  vertical-align: top;
+  background: #0072a3;
+  text-align: center;
+  line-height: 33px;
+  color: #fff;
+  margin-right: 10px;
+  float: left;
+  margin-top: 0px;
+  font-size: 12px;
+}
+.head-info li p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 33px;
+  display: table-cell;
+  font-family: "Montserrat", sans-serif;
+}
+#logo_dpg{
+  width: 50px;
+  height: 50px;
+}
+header .navbar {
+margin: 0px;
+padding: 0px;
+border-radius: 0px;
+min-height: inherit;
+}
+
 a.navbar-brand {
   color: rgba(0, 0, 0, 0.8) !important;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 15px; }
   a.navbar-brand:hover, a.navbar-brand:active {
     color: #0072a3 !important; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: 1.5px;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 3;
   font-weight: 600; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
     color: #0072a3; }
-  .da-home-page-text h3 {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.5;
- }
-
-@media (max-width: 575.98px) {
-  .da-home-page-text .display-3 {
-    font-size: 2.5rem; }
-  .da-home-page-text h3 {
-    font-size: 1rem;
-   } }
-
-
 
 /*Projects Style*/
 .da-projects .da-project-1 {
@@ -525,7 +569,7 @@ a.credit {
 .swiper-slide .swiper-slide-shadow-right{
   background-image: none;
 }
-  
+
 @media (min-width: 0px) and (max-width: 407px) {
   #logo_dpg{
  width: 50px;
@@ -543,5 +587,18 @@ a.credit {
   }
   .swiper-slide{
     margin-right: -1px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .head-info{
+    display:none;
+  }
+  header .container{
+     display: flex;
+     flex-direction: row;
+     align-self: center;
+     justify-content: center;}
+  a.navbar-brand{
+    font-size: 12px;
   }
 }

@@ -28,11 +28,23 @@
     </noscript>
   </head>
   <body id="top">
+
+    <div id="loader">
+  <div class="position-center-center">
+    <div class="cssload-thecube">
+      <div class="cssload-cube cssload-c1"></div>
+      <div class="cssload-cube cssload-c2"></div>
+      <div class="cssload-cube cssload-c4"></div>
+      <div class="cssload-cube cssload-c3"></div>
+    </div>
+  </div>
+</div>
+
     <header class="d-flex flex-column">
       <div class="container pt-4">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0">
-          <a class="navbar-brand d-flex flex-row align-self-center justify-content-center" id="logo-text" href="#">
-            <img src="favicon.png" alt="logo">
+          <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" id="logo-text" href="#">
+            <img id="logo_dpg" src="favicon.png" alt="logo">
            <p> Digital Print Gabon <br>
             L'imprimerie des urgences</p>
           </a>
@@ -736,6 +748,12 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
       },
+  });
+</script>
+<script src="scripts/jquery.min copy.js"></script>
+<script>
+  jQuery( document ).ready(function( $ ) {
+    $("#loader").delay(1000).fadeOut("slow");
   });
 </script>
     <script src="scripts/jquery.min.js?ver=1.2.0"></script>

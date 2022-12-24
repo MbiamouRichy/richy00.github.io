@@ -223,9 +223,11 @@ body {
 header{
   position: relative;
   background: #fff url(../images/hr-bar.jpg) repeat-x;
-  padding: 25px 0;
+  padding: 15px 0;
 }
+
 header .logo-div{
+  margin: 0 auto;
   max-width: 100%;
   display: flex;
   flex-direction: row;
@@ -276,8 +278,8 @@ header .logo-div{
 header .navbar {
 margin: 0px;
 padding: 0px;
-border-radius: 0px;
-min-height: inherit;
+background-color: #0072a3;
+width: 100%;
 }
 
 a.navbar-brand {
@@ -294,7 +296,7 @@ a.navbar-brand {
   line-height: 3;
   font-weight: 600; }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
-    color: #0072a3; }
+    color: white; }
 
 /*Projects Style*/
 .da-projects .da-project-1 {
@@ -569,14 +571,55 @@ a.credit {
 .swiper-slide .swiper-slide-shadow-right{
   background-image: none;
 }
-
+@media (min-width: 320px) and (max-width: 768px)  {
+  #logo-text{
+    font-size: 0.7rem;
+    position: relative;
+    top: 0px;
+    left: -80px;
+  }
+  button.navbar-toggler{
+    position: relative;
+    top: -60px;
+    left: 300px;
+    background-color: #0072a3;
+    color: white;
+  }
+header .navbar{
+  background-color: transparent;
+}
+#da-navbarNav{
+  position: relative;
+  top: -40px;
+}
+}
 @media (min-width: 0px) and (max-width: 407px) {
+button.navbar-toggler{
+  position: relative;
+  top: -60px;
+  left: 250px;
+  background-color: #0072a3;
+  color: white;
+}
+header .navbar{
+  background-color: transparent;
+}
+#da-navbarNav{
+  position: relative;
+  top: -40px;
+}
   #logo_dpg{
- width: 50px;
- height: 50px;
+ width: 35px;
+ height: 35px;
   }
   #logo-text{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    position: relative;
+    top: 0px;
+    left: -60px;
+  }
+  .logo-div{
+   width: 100vw;
   }
   #portfolio .container .text-center h2{
     font-size: 1.5rem;
@@ -598,7 +641,5 @@ a.credit {
      flex-direction: row;
      align-self: center;
      justify-content: center;}
-  a.navbar-brand{
-    font-size: 12px;
-  }
+
 }

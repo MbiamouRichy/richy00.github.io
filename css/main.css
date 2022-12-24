@@ -512,12 +512,16 @@ a.credit {
   .portfolio-modal .close-modal:hover {
     opacity: 0.3;
   }
-  @media (max-width: 991px){
+
+  @media (max-width: 767px){
     #da-navbarNav ul{
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
+      background-color: rgb(52,102,143);
+    }
+    header .navbar{
       background-color: rgb(52,102,143);
     }
     #da-navbarNav ul .nav-item {
@@ -558,11 +562,7 @@ a.credit {
              effet swiper sur les images
  ================================================*/
 
-@media (min-width: 1024px) {
-  #client{
-    padding-top: 10px;
-  }
-}
+
  .swiper {
   width: 100%;
   height: 100%;
@@ -587,7 +587,7 @@ a.credit {
 .swiper-slide .swiper-slide-shadow-right{
   background-image: none;
 }
-@media (min-width: 320px) and (max-width: 768px)  {
+@media (min-width: 320px) and (max-width: 767px)  {
   #logo-text{
     font-size: 0.7rem;
     position: relative;
@@ -609,10 +609,10 @@ header .navbar{
   top: -40px;
 }
 }
-@media (min-width: 0px) and (max-width: 407px) {
+@media (min-width: 0px) and (max-width: 408px) {
 button.navbar-toggler{
   position: relative;
-  top: -60px;
+  top: -50px;
   left: 250px;
   background-color: #0072a3;
   color: white;
@@ -648,7 +648,7 @@ header .navbar{
     margin-right: -1px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .head-info{
     display:none;
   }
@@ -661,7 +661,6 @@ header .navbar{
     
     #img_pereno{
       width: 100%;
-      border: 1px solid red;
       position: relative;
       top: -40px;
     }
@@ -676,4 +675,15 @@ header .navbar{
       width: 160px !important;
       height: 70px !important;
     }
+}
+@media (min-width:  468px) and (max-width: 567px) {
+    button.navbar-toggler{
+      left:400px;
+    }
+ 
+}
+@media (min-width:  568px) and (max-width: 767px) {
+  button.navbar-toggler{
+    left:480px;
+  }
 }

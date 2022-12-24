@@ -430,6 +430,7 @@ a.credit {
 /*porfolio*/
   #portfolio .portfolio-item {
     max-width: 26rem;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -556,8 +557,11 @@ a.credit {
 /*================================================
              effet swiper sur les images
  ================================================*/
-#client{
-  padding-top: 10px;
+
+@media (min-width: 1024px) {
+  #client{
+    padding-top: 10px;
+  }
 }
  .swiper {
   width: 100%;
@@ -654,11 +658,22 @@ header .navbar{
      align-self: center;
      justify-content: center;
     }
-    .image_perenoel{
-      width: 100%;
-    }
+    
     #img_pereno{
       width: 100%;
       border: 1px solid red;
+      position: relative;
+      top: -40px;
+    }
+    .image_perenoel{
+      width: 100%;
+      height: 170px;
+    }
+    .swiper-slide{
+      padding-top: 0;
+    }
+    .swiper-slide img {
+      width: 160px !important;
+      height: 70px !important;
     }
 }

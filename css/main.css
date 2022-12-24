@@ -302,6 +302,7 @@ a.navbar-brand {
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
     color: white; }
 /* block du pere noel */
+
 .image_perenoel{
   width: 100%;
   height: 100%;
@@ -566,7 +567,6 @@ a.credit {
  .swiper {
   width: 100%;
   height: 100%;
-  padding-bottom: 15px;
 }
 
 .swiper-slide {
@@ -574,6 +574,7 @@ a.credit {
   background-position: center;
   background-attachment: fixed;
   margin-right: 30px;
+
 }
 .swiper-slide img {
   width: 261px !important;

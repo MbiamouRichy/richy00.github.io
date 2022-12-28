@@ -474,7 +474,7 @@ header .navbar{
   .logo-div{
    width: 100vw;
   }
-  #portfolio .container .text-center h2{
+  #portfolio .container .text-center h2, .partenaire-text{
     font-size: 1.5rem;
   }
   .swiper-slide img {

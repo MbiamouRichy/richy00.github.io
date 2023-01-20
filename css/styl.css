@@ -98,64 +98,6 @@ section {
       HEADINGS
 ========================================================*/
 
-.but-head{
-  position: absolute;
-  z-index: 2;
-  width: 150px;
-  height: 50px;
-  top: -20px;
-  left: -90px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-    color: white;
-}
-.but-head-2{
-  top: -20px;
-  left: 150px;
-}
-.but-head::before{
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 150px;
-  height: 50px;
-  background: rgb(102,102,102);
-  transition: all 0.3s ease-in-out;
-}
-.but-head::after{
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: 0;
-  content: "";
-  display: block;
-  width: 150px;
-  height: 50px;
-  background: rgb(0, 36, 150);
-  transform: translate(13px, 12px);
-  transition:  all 0.3s ease-in-out;
-}
-.but-head:hover{
-  transform: translate(13px, 12px);
-  color: rgb(222,222,222);
-}
-.but-head:hover::before{
-  background: rgb(0, 36, 150);
-}
-.but-head:hover::after{
-  transform: translate(-15px, -10px);
-  background: rgb(102,102,102);
-}
-
 .heading-block {
   text-align: center;
   margin-bottom: 90px;
@@ -1153,68 +1095,6 @@ header .navbar li .lien i{
   background-color: white;
   opacity: 1;
   color: rgb(0, 36, 150);
-}
-/*================================================
-         boutton whatsapp et phone
- ================================================*/
-
-.cal-float {
-  position: fixed;
-  transform: translate(108px, 0px);
-  top: 30%;
-  right: -15px;
-  width: 170px;
-  overflow: hidden;
-  background-color: rgb(37, 211, 102);
-  color: rgb(255, 255, 255);
-  border-radius: 4px 0px 0px 4px;
-  z-index: 10;
-  transition: all 0.5s ease-in-out 0s;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.whats-float {
-  position: fixed;
-  transform: translate(108px, 0px);
-  top: 40%;
-  right: -15px;
-  width: 170px;
-  overflow: hidden;
-  background-color: rgb(37, 211, 102);
-  color: rgb(255, 255, 255);
-  border-radius: 4px 0px 0px 4px;
-  z-index: 10;
-  transition: all 0.5s ease-in-out 0s;
-  vertical-align: middle;
-}
-.cal-float:hover, .whats-float:hover {
-  color: rgb(255, 255, 255);
-  transform: translate(0px, 0px);
-}
-.cal-float i, .whats-float i  {
-  font-size: 32px;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  transform: rotate(0deg);
-  transition: all 0.5s ease-in-out 0s;
-  text-align: center;
-}
-.cal-float:hover i {
-  transform: rotate(360deg);
-}
-
-.cal-float a span, .whats-float a span {
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  padding-top: 8px;
-  padding-bottom: 10px;
-  position: absolute;
-  line-height: 16px;
-  font-weight: bolder;
-}
-.small, small {
-  font-size: 80%;
-  font-weight: 400;
 }
 
 /*================================================
